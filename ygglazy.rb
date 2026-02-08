@@ -9,16 +9,16 @@ class Ygglazy < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_darwin_amd64.tar.gz.tar.gz"
-      sha256 "3fa0ff3872ae63ae82c72a96e2eb4d240226e7040a16aec9e4d3c3b98f202270"
+      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_darwin_amd64.tar.gz"
+      sha256 "26c731f64cf6f0687686a4e0621073d97101eb4fe48196dcefb9025428ee7f67"
 
       def install
         bin.install "ygglazy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_darwin_arm64.tar.gz.tar.gz"
-      sha256 "5964e97d2ed2c37f064653a4c01873d23c9781149f36946fe204831cd3539f96"
+      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_darwin_arm64.tar.gz"
+      sha256 "204211e5ea36823210fc2b1c9e630560613f859c3c6a934df843806cba82b1a9"
 
       def install
         bin.install "ygglazy"
@@ -28,15 +28,15 @@ class Ygglazy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_linux_amd64.tar.gz.tar.gz"
-      sha256 "be17fed223c589f21c7b3d0cbeb81f678d6d002a16e1f6a32a15286ad8aff7eb"
+      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_linux_amd64.tar.gz"
+      sha256 "739d072cf2f66ca70fd4091993a072d1fd33a5720e16084c28613aab571bfbdd"
       def install
         bin.install "ygglazy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_linux_arm64.tar.gz.tar.gz"
-      sha256 "3d46b9867f4ccad368ee57d5d78719f12350853feb5eb17ad4a6381d4206e740"
+      url "https://github.com/Y-Akamirsky/ygg-lazy-cli/releases/download/0.1.6-c/ygglazy_0.1.6-c_linux_arm64.tar.gz"
+      sha256 "34f558e83006d2d83168bacf9ffdf05debbc8b59c19554b4879c58327e89411a"
       def install
         bin.install "ygglazy"
       end
